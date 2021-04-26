@@ -6,12 +6,12 @@ $(document).ready(function(){
  })
 
 
- var mySwiper1 = new Swiper('.bg_slide', {
-  effect : 'fade',
-  slidesPerView: 1,
-  spaceBetween: 10,
-  loop: 'true'
-})
+//  var mySwiper1 = new Swiper('.bg_slide', {
+//   effect : 'fade',
+//   slidesPerView: 1,
+//   spaceBetween: 10,
+//   loop: 'true'
+// })
 
 
 
@@ -19,8 +19,23 @@ $(document).ready(function(){
   effect : 'fade',
   slidesPerView: 1,
   spaceBetween: 10,
-  loop: 'true'
+  loop: 'true',
+  pagination: {
+    el: '.main-swiper-pagination',
+    clickable: true,},
+  on:{
+    slideChangeTransitionEnd:function(){
+      idx = this.realIndex+1; //swiper의 this
+      $('#mvWrapper').removeClass('bg1 bg2 bg3');
+      $('#mvWrapper').addClass('bg'+idx);
+    }
+  }
 })
+
+
+
+
+
 
 
 
@@ -52,8 +67,7 @@ swiper1.slides.each(function(index,val){
 });
 
 
-var swiper2 = new Swiper ('.swiper2', {
-  // direction: 'horizontal',
+var swiper2 = new Swiper ('.contents', {
   loop: false,
   autoHeight: true,
   onSlideChangeEnd: function(swiper){
@@ -62,6 +76,10 @@ var swiper2 = new Swiper ('.swiper2', {
     swiper1.slideTo(n, 500, false);
   }
 });
+
+
+
+
 
 
 
@@ -75,8 +93,25 @@ var mySwiper = new Swiper('.sec5', {
     nextEl: '.sec5 .btn.next',
     prevEl: '.sec5 .btn.prev',
   },
+  pagination: {
+    el: '.sec5-swiper-pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + ('0'+ (index + 1)) + '</span>';
+    },
+  },
 })
 
+
+
+
+
+  var msnry = new Masonry( '.grid', {
+    itemSelector: '.grid-item',
+    // columnWidth: 'calc(100% / 3)'
+  });
+    
+    
 
 
 });
