@@ -5,13 +5,31 @@ $(document).ready(function(){
   $('.lang').toggleClass('active');
  })
 
+ $('.menu_btn').click(function(){
+  if($('.hidden_gnb').hasClass('open')) {
+    $('.hidden_gnb').removeClass('open');
+  } else
+  $('.hidden_gnb').addClass('open');
+ });
 
-//  var mySwiper1 = new Swiper('.bg_slide', {
-//   effect : 'fade',
-//   slidesPerView: 1,
-//   spaceBetween: 10,
-//   loop: 'true'
-// })
+ 
+ $('.menu_btn').click(function(){
+  if($('.hidden_gnb').hasClass('open')) {
+    $('.menu_btn').addClass('active');
+  } else
+  $('.menu_btn').removeClass('active');
+ });
+
+
+
+
+ 
+  var offset = $('.main_search').offset();
+  console.log(offset);
+
+
+
+
 
 
 
@@ -31,6 +49,9 @@ $(document).ready(function(){
     }
   }
 })
+
+
+
 
 
 
