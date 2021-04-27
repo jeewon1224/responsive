@@ -1,37 +1,59 @@
 $(document).ready(function(){
 
-
- $('#lang').click(function(){
-  $('.lang').toggleClass('active');
- })
-
- $('.menu_btn').click(function(){
-  if($('.hidden_gnb').hasClass('open')) {
-    $('.hidden_gnb').removeClass('open');
-  } else
-  $('.hidden_gnb').addClass('open');
- });
-
- 
- $('.menu_btn').click(function(){
-  if($('.hidden_gnb').hasClass('open')) {
-    $('.menu_btn').addClass('active');
-  } else
-  $('.menu_btn').removeClass('active');
- });
+  // 언어 옵션 토글
+  $('#lang').click(function(){
+    $('.lang').toggleClass('active');
+  });
 
 
+  //메뉴 버튼 클릭 시 히든 네비게이션 오픈
+  $('.menu_btn').click(function(){
+    if($('.hidden_gnb').hasClass('open')) {
+      $('.hidden_gnb').removeClass('open');
+    } else
+    $('.hidden_gnb').addClass('open');
+  });
+
+  
+  // 히든 네비게이션 오픈 시 메뉴 close 버튼
+  $('.menu_btn').click(function(){
+    if($('.hidden_gnb').hasClass('open')) {
+      $('.menu_btn').addClass('active');
+    } else
+    $('.menu_btn').removeClass('active');
+  });
 
 
- 
-  var offset = $('.main_search').offset();
+
+  // 헤더 백그라운드 색상 변경
+  var offset = $( '.main_search' ).offset();
   console.log(offset);
+  // .header .header_wrap h1 a img
+  var logo = $('.header .header_wrap h1 a img');
+
+  $( window ).scroll( function() {
+    if ( $( document ).scrollTop() > offset.top ) {
+      $('.header').css('background-color','white');
+      $('.header .gnb').css('color','black');
+      $('.header .menu_btn button i').css('background-color','#111');
+      // $('.header .header_wrap h1 a img').find('img').attr("src", $(this).find('img').attr("src").replace("logo.png","logo_hover.png"));
+      $('#logo').attr("src", 'img/logo_hover.png');
+
+    }else {
+      $('.header').css('background-color','transparent');
+      $('.header .gnb').css('color','white');
+      $('.header .menu_btn button i').css('background-color','#fff');
+      $('#logo').attr("src", 'img/logo.png');
+      
+
+    }
+  });
 
 
 
 
 
-
+// 메인 배너 슬라이드
 
  var mySwiper2 = new Swiper('.main_banner', {
   effect : 'fade',
@@ -43,18 +65,12 @@ $(document).ready(function(){
     clickable: true,},
   on:{
     slideChangeTransitionEnd:function(){
-      idx = this.realIndex+1; //swiper의 this
+      idx = this.realIndex+1;
       $('#mvWrapper').removeClass('bg1 bg2 bg3');
       $('#mvWrapper').addClass('bg'+idx);
     }
   }
 })
-
-
-
-
-
-
 
 
 

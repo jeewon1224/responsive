@@ -3,9 +3,11 @@
 
 /* 헤더 */
 .header{position: fixed; height: 90px;  width: 100%; z-index: 2;}
+
 .header .header_wrap{position: relative; height: 100%;}
-.header .header_wrap h1{width: 100px; height: 34px; background: url(../img/logo.png) no-repeat; background-size: 100%; position: absolute; top: 50%; transform: translateY(-50%); left: 50px;}
+.header .header_wrap h1{width: 100px; height: 33px; _background: url(../img/logo.png); _background-repeat: no-repeat; background-size: 100%; position: absolute; top: 50%; transform: translateY(-50%); left: 50px;}
 .header .header_wrap h1 a{display: block; height: 100%;}
+.header .header_wrap h1 a img{width: 100%;height: 100%;object-fit: cover;}
 
 .header .gnb{position: relative; color: #fff;}
 .header .gnb .gnb_list{line-height: 90px; font-family: 'Poppins', sans-serif; display: inline-block; margin-left: 200px; }
@@ -24,19 +26,18 @@
 
 
 .header .menu_btn{position: absolute; width: 30px; height: 30px; top: 50%; right: 40px; transform: translateY(-50%); z-index: 10;}
-.header .menu_btn button{border: none; background: none;     display: block; height: 100%;}
-.header .menu_btn button span{}
-.header .menu_btn button i{display: block; height: 2px; background-color: #fff; position: absolute; width: 100%; top: 50%; transform: translateY(-50%);}
-.header .menu_btn button i::before,
-.header .menu_btn button i::after{display: block; height: 2px;
- background-color: #fff; position: absolute; width: 100%;}
-.header .menu_btn button i::before{content: ''; top: -10px; transition-property: top, transform;}
-.header .menu_btn button i::after{content: ''; top: 10px; transition-property: top, transform;}
+.header .menu_btn button{border: none; background: none; display: block; height: 100%; padding: 0; margin: 0; width: 100%; position: relative;}
 
-.header .menu_btn.active button i{background: transparent;}
-.header .menu_btn.active button i::before{top: 0; transform: rotate(45deg); background-color: black; transition-duration:.3s, 1s; }
-.header .menu_btn.active button i::after{transform: rotate(-45deg); top: 0;  background-color: black; transition-duration:
-  .3s, 1s; }
+.header .menu_btn button i{display: block; height: 2px;width: 100%;background-color: #fff; position: absolute; transition: .3s;}
+.header .menu_btn button i.line1{top: 0;}
+.header .menu_btn button i.line2{top: 10px;}
+.header .menu_btn button i.line3{top: 20px;}
+
+.header .menu_btn.active button i.line1{transform: rotate(45deg); background-color: #111; top: 10px;}
+.header .menu_btn.active button i.line2{visibility: hidden; opacity: 0;}
+.header .menu_btn.active button i.line3{transform: rotate(-45deg); top: 10px; background-color: #111;}
+
+
 
 .header .hidden_gnb{height: 0;width: 100%;position: fixed;top: 0;background-color: #fff; transition-property:height; transition-duration: 0.3s; visibility: hidden; opacity: 0;}
 .header .hidden_gnb.open{height: 100%; visibility: visible; opacity: 1;}
