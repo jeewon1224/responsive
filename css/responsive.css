@@ -1,0 +1,89 @@
+/*
+  가장중요한 조건
+  가로스크롤은 절대 생기면 안된다.
+  가로스크롤이 생기는이유는
+  - 위드가 살이있는영역 ex)1200 1000px
+  - absolute ->부모한테 무조건 overflow hidden을 줘야됨
+  모바일 확인은 최고 작은 사이즈인 320 (크롬모바일 아이폰se) 확인시 잘나오묜 끝.
+ */
+
+/* 실콘텐츠 + 100 */
+/* 1300 */
+
+@media screen and (max-width: 1500px) {
+ /* header */
+ /* main */
+ .section_2 .section2_wrapper{width: 100%;padding: 0 50px;}
+ .new .new_wrapper{width: 100%;padding: 0 50px;}
+ .trend .trend_wrapper{width: 100%;padding: 0 30px;}
+ /* footer */
+ .footer .footer_nav_wrap{width: 100%;padding: 0 50px;}
+ .footer .footer_nav .sns_nav{right: 50px;}
+ .footer .footer_ect{width: 100%;padding: 0 50px;}
+ .footer .footer_info{width: calc(100% - 520px);}
+}
+@media screen and (max-width: 1380px) {
+ .main_visual .main_banner .swiper-slide .inner{width: 100%; left: 0;transform: translate(0, -50%); padding: 0 50px;}
+ .mv_wrapper .main-swiper-pagination{width: 100%; left: 0; transform: translate(0, -50%); padding: 0 50px;}
+ .main_visual .main_search{width: 100%; padding: 150px 50px;}
+ .section_6 .section6_wrapper{width: 100%; padding: 0 50px;}
+ .section_6 .business_wrap{height: auto;}
+ .section_6 .business_wrap .inner{width: 100%; height: 100%; position: absolute;top: 0;left: 0;}
+ .section_6 .business_wrap >div.slide01{background: red; padding-bottom: 50%; height: auto;width: 40vw; position: relative;}
+ 
+ .section_6 .business_wrap >div.slide02{width: 35vw; left: calc(40vw + 30px);padding-bottom: 50%; height: auto;}
+ .section_6 .business_wrap >div.slide03{width: 35vw; left: calc(75vw + 60px);padding-bottom: 50%; height: auto;}
+ .section_6 .section6_wrapper> .text_wrap{text-align: left; width: auto;}
+ .section_6 .business_wrap > .btn_wrap{bottom: 0; left: calc(40vw + 30px);}
+}
+
+@media screen and (max-width: 1280px) {
+ .header .gnb .right_gnb li:nth-child(-n+3){display: none;}
+ .section_5 .sec5 .swiper-slide .slide_box .detail{padding: 50px;}
+ .sec5 .swiper_nav{left: auto; right: 50px;transform: translate(0 , -50%); width: calc(50% - 100px);}
+}
+/*
+테블릿
+중대적인 레이아웃 변화
+폰트사이즈 줄여준다 아래와같은룰로
+*/
+@media screen and (max-width: 1024px) {
+ .header .gnb .gnb_list{display: none;}
+ .main_visual .main_banner .swiper-slide .inner strong{margin-bottom: 50px; font-size: 70px;}
+ .main_visual .main_search input{width: 600px;}
+ .section_2 .contents .swiper-slide .item_box{margin: 0; width: 100%;float: none; margin-bottom: 10px; height: calc((100% - 20px)/3);}
+
+.section_2 .contents .swiper-slide .item_box::after{content: ''; clear: both; display: block;}
+.section_2 .contents .swiper-slide .item_box .item{height: 100%; float: left; width: calc(50% - 5px);}
+.section_2 .contents .swiper-slide .item_box.middle{width: 100%;}
+.section_2 .contents .swiper-slide .item_box.middle .item{float: none;width: 100%;}
+.section_2 .contents .swiper-slide .item_box.middle .item img{}
+.section_2 .contents .swiper-slide .item_box .item:last-child{float: right;}
+.section_2 .contents .swiper-slide .item_box.right_gnb{margin-bottom: 0;}
+
+.new .new_boxes .new_box {
+
+ width: calc((100% - 20px)/3);}
+ .new .new_boxes .new_box:nth-child(2){margin: 0 10px;}
+ .section_5{padding: 0 0 50px 0;}
+ .section_5 .sec5 .swiper-slide .slide_box .bg{width: 100%; height: auto; padding-bottom: 50%; position: relative;}
+ .section_5 .sec5 .swiper-slide .slide_box .bg img{position: absolute;}
+ .section_5 .sec5 .swiper-slide .slide_box .detail{position: relative; top: auto; width: calc(100% - 100px); transform: translateY(-50px); right: auto; margin-left: 50px; height: auto;}
+ .section_5 .sec5 .swiper-slide .slide_box .detail .desc_wrap{position: relative; bottom: auto; padding-bottom: 10px;}
+ .section_5 .sec5 .swiper-slide .slide_box .detail .tit_wrap strong{display: block; margin-bottom: 50px;}
+ .sec5 .swiper_nav{display: none;}
+ .sec5 .sec5-swiper-pagination{bottom: 0;top: auto;left: auto !important; margin-left: auto; text-align: center;} 
+}
+
+/*
+모바일
+*대대적 레이아웃 변화
+사이드 패딩 15~20
+대폰트 font-size: 38~28
+중폰트 18~28
+소폰트 12~ 16
+웬만한 레이아웃은 1줄 아니면 2줄
+*/
+@media screen and (max-width: 768px) {
+
+}
