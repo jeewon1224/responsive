@@ -120,6 +120,14 @@ var swiper1 = new Swiper('.tab', {
       freeMode: true,
       loop: false,
       // simulateTouch:false
+
+      // breakpoints: {
+      //   // when window width is >= 320px
+      //   320: {
+      //     slidesPerView: 2,
+      //     spaceBetween: 20
+      //   },
+      // }
   });
 
 
