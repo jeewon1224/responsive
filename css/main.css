@@ -89,8 +89,8 @@
 .new .new_boxes .new_box .new_img:hover img{transform: scale(1.1);}
 .new .new_boxes .new_box .new_desc{font-family: 'Poppins', sans-serif;}
 .new .new_boxes .new_box .new_desc strong{font-size: 18px; font-weight: 500;  margin: 20px 0; display: block; line-height: 22px;}
-.new .new_boxes .new_box .new_desc p{color: #858585; padding-bottom: 40px;}
-.new .new_boxes .new_box .new_desc a{position: relative;}
+.new .new_boxes .new_box .new_desc p{color: #858585; }
+.new .new_boxes .new_box .new_desc a{position: relative; display: block; margin-top: 40px;}
 .new .new_boxes .new_box .new_desc a::after{content: ''; position: absolute; bottom: -5px; left: 50%; width: 0; height: 2px; transition: .3s; background-color: #111;}
 .new .new_boxes .new_box .new_desc a:hover::after{width: 100%; left: 0;}
 
@@ -102,8 +102,11 @@
 .section_4 .img_wrap{}
 .section_4 .img_wrap img{width: 25%; float: left;}
 .section_4 .txt_wrap{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; text-align: center;}
-.section_4 .txt_wrap strong{font-size: 35px; font-weight: 600;}
-.section_4 .txt_wrap span{display: block;margin-top: 20px; font-size: 12px;}
+.section_4 .txt_wrap strong{font-size: 35px; font-weight: 600; line-height: 35px;}
+.section_4 .txt_wrap span{display: block;margin-top: 20px; font-size: 12px; line-height: 20px;}
+.section_4 .hidden_bg{display: none; }
+.section_4 .hidden_bg img{width: 50%; float: left;}
+
 
 
 

@@ -86,4 +86,68 @@
 */
 @media screen and (max-width: 768px) {
 
+
+  .header .header_wrap h1{left: 15px;}
+
+  /* main banner */
+  .main_visual .main_banner .swiper-slide .inner{padding: 0 20px;}
+  .main_visual .main_search{padding: 150px 20px;}
+  .main_visual .main_search h2{font-size: 28px;}
+  .main_visual .main_search input{width: 200px; margin: 20px 0; height: 45px;}
+  .main_visual .main_search em{font-size: 12px;}
+  .main_visual .main_search span{font-size: 16px;}
+
+
+
+  /* section2 */
+  .section_2 .section2_wrapper{padding: 0 20px;}
+  .section_2 .tab{width: 280px;}
+
+
+
+  /* new section */
+  .new .new_wrapper{padding: 0 20px;}
+  .new .new_boxes .new_box h3{font-size: 18px;}
+  .new .new_boxes .new_box .new_desc strong{font-size: 14px;    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; line-height:16px; overflow:hidden; text-overflow:ellipsis; margin: 10px 0;}
+  .new .new_boxes .new_box .new_desc p{font-size: 12px;    display:-webkit-box; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3;  -webkit-box-orient: vertical;}
+  .new .new_boxes .new_box .new_desc a{margin-top: 20px;}
+
+
+
+  /* section 4 */
+  .section_4 .img_wrap{display: none;}
+  .section_4 .hidden_bg{display: block;}
+  .section_4 .txt_wrap strong{font-size: 28px;}
+
+
+
+
+  /* section 5 */
+  .section_5 .sec5 .swiper-slide .slide_box .detail{padding: 20px;}
+  .section_5 .sec5 .swiper-slide .slide_box .detail .tit_wrap strong{font-size: 28px;}
+
+
+  /* section 6 */
+  .section_6 .section6_wrapper{padding: 0 20px 100px;}
+  /* .section_6 .business_wrap >div.slide03{left: calc(40vw + 30px);} */
+  .section_6 .business_wrap > .btn_wrap{bottom: -100px; left: 50%;transform: translateX(-50%);}
+  .section_6 .business_wrap >div.slide03{left:calc(40vw + 30px); bottom: -30px;}
+
+
+
+
+  .trend .trend_wrapper{padding: 0 10px;}
+  .trend .trend_tit h2{font-size: 28px;}
+  .trend .trend_con .con_wrap .grid .grid-item{width:50%; padding: 10px;}
+  .trend .trend_con .con_wrap .grid .grid-item .desc_wrap{padding: 10px;}
+  .trend .trend_con .con_wrap .grid .grid-item .desc_wrap strong{font-size: 16px; padding: 10px 0;}
+  .trend .trend_con .con_wrap .grid .grid-item .desc_wrap p{display:-webkit-box; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2;  -webkit-box-orient: vertical; font-size: 13px; line-height: 20px;}
+
+
+
+
+
+  .footer .footer_ect{padding: 0 20px;}
+  .footer .footer_info{width: 100%; margin-left: 0;}
+
 }
