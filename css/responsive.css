@@ -48,11 +48,15 @@
 폰트사이즈 줄여준다 아래와같은룰로
 */
 @media screen and (max-width: 1024px) {
- .header .gnb .gnb_list{display: none;}
+ /* header */
+  .header .gnb .gnb_list{display: none;}
+
+  /* main */
  .main_visual .main_banner .swiper-slide .inner strong{margin-bottom: 50px; font-size: 70px;}
  .main_visual .main_search input{width: 600px;}
  .section_2 .contents .swiper-slide .item_box{margin: 0; width: 100%;float: none; margin-bottom: 10px; height: calc((100% - 20px)/3);}
 
+ /* section */
 .section_2 .contents .swiper-slide .item_box::after{content: ''; clear: both; display: block;}
 .section_2 .contents .swiper-slide .item_box .item{height: 100%; float: left; width: calc(50% - 5px);}
 .section_2 .contents .swiper-slide .item_box.middle{width: 100%;}
@@ -61,6 +65,7 @@
 .section_2 .contents .swiper-slide .item_box .item:last-child{float: right;}
 .section_2 .contents .swiper-slide .item_box.right_gnb{margin-bottom: 0;}
 
+/* new */
 .new .new_boxes .new_box {
 
  width: calc((100% - 20px)/3);}
@@ -73,6 +78,16 @@
  .section_5 .sec5 .swiper-slide .slide_box .detail .tit_wrap strong{display: block; margin-bottom: 50px;}
  .sec5 .swiper_nav{display: none;}
  .sec5 .sec5-swiper-pagination{bottom: 0;top: auto;left: auto !important; margin-left: auto; text-align: center;} 
+
+
+
+
+ /* footer */
+ .footer .footer_nav_wrap{height: 100px;}
+ .footer .footer_nav .sns_nav{right: auto; left: 50%; transform: translateX(-50%);}
+ .footer .footer_nav .left_nav{position: relative;left: 50%;transform: translateX(-50%); font-size: 12px;}
+
+ 
 }
 
 /*
@@ -88,7 +103,11 @@
 
 
   .header .header_wrap h1{left: 15px;}
+  .header .hidden_gnb .list_wrap{width: 100%;}
 
+
+
+  
   /* main banner */
   .main_visual .main_banner .swiper-slide .inner{padding: 0 20px;}
   .main_visual .main_search{padding: 150px 20px;}
@@ -102,14 +121,16 @@
   /* section2 */
   .section_2 .section2_wrapper{padding: 0 20px;}
   .section_2 .tab{width: 280px;}
-
-
+  .section_2 .contents .item_box .item .txt_wrap{bottom: 15px;}
+  .section_2 .contents .item_box .item .txt_wrap strong{font-size: 14px;}
+  .section_2 .contents .item_box .item .txt_wrap span{margin: 10px 0; font-size: 10px;}
+  .section_2 .contents .item_box .item .txt_wrap p{font-size: 12px;}
 
   /* new section */
   .new .new_wrapper{padding: 0 20px;}
   .new .new_boxes .new_box h3{font-size: 18px;}
   .new .new_boxes .new_box .new_desc strong{font-size: 14px;    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; line-height:16px; overflow:hidden; text-overflow:ellipsis; margin: 10px 0;}
-  .new .new_boxes .new_box .new_desc p{font-size: 12px;    display:-webkit-box; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3;  -webkit-box-orient: vertical;}
+  .new .new_boxes .new_box .new_desc p{font-size: 12px;    display:-webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 3;  -webkit-box-orient: vertical;}
   .new .new_boxes .new_box .new_desc a{margin-top: 20px;}
 
 
@@ -124,30 +145,33 @@
 
   /* section 5 */
   .section_5 .sec5 .swiper-slide .slide_box .detail{padding: 20px;}
-  .section_5 .sec5 .swiper-slide .slide_box .detail .tit_wrap strong{font-size: 28px;}
+  .section_5 .sec5 .swiper-slide .slide_box .detail .tit_wrap strong{font-size: 20px;}
 
 
   /* section 6 */
   .section_6 .section6_wrapper{padding: 0 20px 100px;}
   /* .section_6 .business_wrap >div.slide03{left: calc(40vw + 30px);} */
+  .section_6 h2{font-size: 36px;}
+  .section_6 .section6_wrapper> .text_wrap{font-size: 14px; line-height: 20px;}
   .section_6 .business_wrap > .btn_wrap{bottom: -100px; left: 50%;transform: translateX(-50%);}
   .section_6 .business_wrap >div.slide03{left:calc(40vw + 30px); bottom: -30px;}
-
-
+  .section_6 .business_wrap .txt_wrap{padding: 10px;}
+  .section_6 .business_wrap .txt_wrap strong{font-size: 18px;}
+  .section_6 .business_wrap .txt_wrap p{font-size: 14px;}
 
 
   .trend .trend_wrapper{padding: 0 10px;}
   .trend .trend_tit h2{font-size: 28px;}
-  .trend .trend_con .con_wrap .grid .grid-item{width:50%; padding: 10px;}
-  .trend .trend_con .con_wrap .grid .grid-item .desc_wrap{padding: 10px;}
-  .trend .trend_con .con_wrap .grid .grid-item .desc_wrap strong{font-size: 16px; padding: 10px 0;}
-  .trend .trend_con .con_wrap .grid .grid-item .desc_wrap p{display:-webkit-box; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2;  -webkit-box-orient: vertical; font-size: 13px; line-height: 20px;}
+  .trend .trend_con .con_wrap .grid .grid-item{width:50%; padding: 10px; margin-bottom: 0;}
+  .trend .trend_con .con_wrap .grid .grid-item .desc_wrap{padding: 10px 0 0 0 ;}
+  .trend .trend_con .con_wrap .grid .grid-item .desc_wrap strong{font-size: 16px; padding: 5px 0;}
+  .trend .trend_con .con_wrap .grid .grid-item .desc_wrap p{display:-webkit-box; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2;  -webkit-box-orient: vertical; font-size: 13px; line-height: 20px; display: none;}
+  .trend .trend_con .con_wrap .grid .grid-item .desc_wrap span{font-size: 12px;}
 
 
 
-
-
+  .footer .footer_nav_wrap{padding: 0 20px;}
   .footer .footer_ect{padding: 0 20px;}
   .footer .footer_info{width: 100%; margin-left: 0;}
-
+  .footer .footer_nav .left_nav{line-height: 15px;}
 }

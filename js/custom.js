@@ -13,7 +13,6 @@ $(document).ready(function(){
       $('.header').removeClass('on');
       $('body').removeClass('hidden');
 
-
     } else{
     $('.hidden_gnb').addClass('open');
     $('.header').addClass('on');
