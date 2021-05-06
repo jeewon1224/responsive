@@ -96,7 +96,7 @@ $(document).ready(function(){
   on:{
     slideChangeTransitionEnd:function(){
       idx = this.realIndex+1;
-      $('#mvWrapper').removeClass('bg1 bg2 bg3');
+      $('#mvWrapper').removeClass('bg1 bg2 bg3 bg4');
       $('#mvWrapper').addClass('bg'+idx);
     }
   }

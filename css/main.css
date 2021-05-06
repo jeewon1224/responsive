@@ -7,17 +7,18 @@
  /* 메인배너 */
 .main_visual{}
 .main_visual .mv_wrapper{background-repeat: no-repeat; background-size: cover; background-attachment: fixed; transition: .3s; background-position: center;}
-.main_visual .mv_wrapper.bg1{background-image: url(../img/main_banner_01.jpg);}
-.main_visual .mv_wrapper.bg2{background-image: url(../img/main_banner_02.jpg);}
-.main_visual .mv_wrapper.bg3{background-image: url(../img/main_banner_03.jpg);}
+.main_visual .mv_wrapper.bg1{background-image: url(../img/main/main01.jpg);}
+.main_visual .mv_wrapper.bg2{background-image: url(../img/main/main04.jpg);}
+.main_visual .mv_wrapper.bg3{background-image: url(../img/main/main09.jpg);}
+.main_visual .mv_wrapper.bg4{background-image: url(../img/main/main08.jpg);}
 
 .main_visual .main_banner{height: 100vh;}
 .main_visual .main_banner .swiper-wrapper{}
 .main_visual .main_banner .swiper-slide{}
 .main_visual .main_banner .swiper-slide .inner{width: 1280px; margin: 0 auto; position: absolute; color: #fff; top: 50%; left: 50%;transform: translate(-50%, -50%);} 
 .main_visual .main_banner .swiper-slide .inner strong{font-weight: 600; font-size: 90px; display: block; font-family: 'Baskervville', serif; letter-spacing: 2px;  margin-bottom: 100px; transform: translateY(30px); opacity: 0; transition: .5s .5s;}
-.main_visual .main_banner .swiper-slide .inner p{display: block; font-size: 20px; line-height: 30px;}
-.main_visual .main_banner .swiper-slide .inner a{display: block; margin-top: 70px; font-size: 16px;}
+.main_visual .main_banner .swiper-slide .inner p{display: block; font-size: 20px; line-height: 30px;transform: translateY(30px); opacity: 0; transition: .5s .8s;}
+.main_visual .main_banner .swiper-slide .inner a{display: block; margin-top: 70px; font-size: 16px;transform: translateY(30px); opacity: 0; transition: .5s .8s;}
 .main_visual .main_banner .swiper-slide-active .inner strong,
 .main_visual .main_banner .swiper-slide-active .inner p,
 .main_visual .main_banner .swiper-slide-active .inner a{opacity: 1; transform: translateY(0);}
@@ -57,19 +58,20 @@
 .section_2 .contents .swiper-slide{height: 700px;}
 .section_2 .contents .swiper-slide .item_box{width: calc(25% - 10px); height: 700px; float: left; margin: 0 5px;}
 .section_2 .contents .swiper-slide .item_box.middle{width: calc(50% - 10px);}
-.section_2 .contents .swiper-slide .item_box .item{width: 100%; height: 345px; background-color: #eee; border-radius: 20px; position: relative;}
+.section_2 .contents .swiper-slide .item_box .item{width: 100%; height: 345px; background-color: #f6f6f6; border-radius: 20px; position: relative; text-align: center;}
 .section_2 .contents .swiper-slide .item_box.middle .item{height: 100%; overflow: hidden;}
 .section_2 .contents .swiper-slide .item_box .item.item1,
-.section_2 .contents .swiper-slide .item_box .item.item4{
- margin-bottom: 10px;}
+.section_2 .contents .swiper-slide .item_box .item.item4{margin-bottom: 10px; padding: 20px;}
 
 
-.section_2 .contents .item_box .item .img_wrap{height: 60%; text-align: center; width: 100%; padding: 30px;}
-.section_2 .contents .item_box.middle .item .img_wrap{height: 100%; width: 100%; position: relative;}
+.section_2 .contents .item_box .item .img_wrap{height: 60%; text-align: center; width: 200px; position: relative; display: inline-block;}
+.section_2 .contents .item_box.middle .item .img_wrap{height: 100%; width: 100%;}
+.section_2 .contents .item_box .item .img_wrap a{display: block;width: 100%;height: 100%; position: relative;}
 .section_2 .contents .item_box .item .img_wrap img{height: 100%;object-fit: cover; width: 100%;}
+.section_2 .contents .item_box .item .img_wrap::after{content: ''; position: absolute; width: 100%;height: 100%;top: 0;left: 0; background-color: rgba(34,34,34,0.03);}
 .section_2 .contents .item_box.middle .item .img_wrap img{width: 100%; position: absolute; bottom: 0;left: 0;}
 
-.section_2 .contents .item_box .item .txt_wrap{position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); text-align: center;}
+.section_2 .contents .item_box .item .txt_wrap{position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); text-align: center;}
 .section_2 .contents .item_box .item .txt_wrap strong{display: block;font-weight: 600; font-size: 18px;}
 .section_2 .contents .item_box .item .txt_wrap span{display: block; color: #555; font-size: 14px;  margin: 10px 0 20px 0; }
 .section_2 .contents .item_box .item .txt_wrap p{display: block; color: #555; font-size: 16px;}
