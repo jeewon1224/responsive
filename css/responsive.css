@@ -38,7 +38,12 @@
 }
 
 @media screen and (max-width: 1280px) {
- .header .gnb .right_gnb li:nth-child(-n+3){display: none;}
+  .header .gnb .right_gnb li:nth-child(-n+3){display: none;}
+  .header .hidden_gnb .hidden_right{display: inline-block;}
+
+
+
+
  .section_5 .sec5 .swiper-slide .slide_box .detail{padding: 50px;}
  .sec5 .swiper_nav{left: auto; right: 50px;transform: translate(0 , -50%); width: calc(50% - 100px);}
 }
@@ -54,16 +59,21 @@
   /* main */
  .main_visual .main_banner .swiper-slide .inner strong{margin-bottom: 50px; font-size: 70px;}
  .main_visual .main_search input{width: 600px;}
- .section_2 .contents .swiper-slide .item_box{margin: 0; width: 100%;float: none; margin-bottom: 10px; height: calc((100% - 20px)/3);}
-
+ 
  /* section */
+ 
+ .section_2 .contents .swiper-slide .item_box{margin: 0; width: 100%;float: none; margin-bottom: 10px; height: calc((100% - 20px)/3);}
 .section_2 .contents .swiper-slide .item_box::after{content: ''; clear: both; display: block;}
 .section_2 .contents .swiper-slide .item_box .item{height: 100%; float: left; width: calc(50% - 5px);}
-.section_2 .contents .swiper-slide .item_box.middle{width: 100%;}
-.section_2 .contents .swiper-slide .item_box.middle .item{float: none;width: 100%;}
+.section_2 .contents .swiper-slide .item_box.middle{width: 100%; }
+.section_2 .contents .swiper-slide .item_box.middle .item{float: none;width: 100%; padding: 0;}
 .section_2 .contents .swiper-slide .item_box.middle .item img{}
 .section_2 .contents .swiper-slide .item_box .item:last-child{float: right;}
 .section_2 .contents .swiper-slide .item_box.right_gnb{margin-bottom: 0;}
+.section_2 .contents .item_box .item .img_wrap{width: 150px;}
+.section_2 .contents .item_box.middle .txt_wrap a{position: absolute;
+  bottom: 30px;
+  right: 50px;}
 
 /* new */
 .new .new_boxes .new_box {
@@ -97,9 +107,12 @@
   left: 0; float: left; width: 70%; margin-left: 0; padding-right: 20px;}
   .footer .footer_info span{margin-bottom: 5px;}
   .footer .footer_info p{width: 100%; margin-top: 10px;}
- .footer .footer_cs {    margin-left: 0;
+ .footer .footer_cs {margin-left: 0;
   width: 30%;
-  float: right;}
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;}
  
 }
 
@@ -117,9 +130,9 @@
 
   .header .header_wrap h1{left: 15px;}
   .header .hidden_gnb .list_wrap{width: 100%;}
-
-
-
+  .header .hidden_gnb .hidden_list > li > a{font-size: 28px;}
+  .header .hidden_gnb .hidden_bg{display: none;}
+  .header .hidden_gnb .hidden_right li{margin: 0 5px; font-size: 12px;}
   
   /* main banner */
   .main_visual .main_banner .swiper-slide .inner{padding: 0 20px;}
@@ -128,20 +141,28 @@
   .main_visual .main_search input{width: 200px; margin: 20px 0; height: 45px;}
   .main_visual .main_search em{font-size: 12px;}
   .main_visual .main_search span{font-size: 16px;}
+  .main_visual .mv_wrapper.bg1{background-image: url(../img/main/main01_small.jpg);}
+  .main_visual .mv_wrapper.bg2{background-image: url(../img/main/main04_small.jpg);}
+  .main_visual .mv_wrapper.bg3{background-image: url(../img/main/main10_small.jpg);}
+  .main_visual .mv_wrapper.bg4{background-image: url(../img/main/main08_small.jpg);}
 
 
 
   /* section2 */
   .section_2 .section2_wrapper{padding: 0 20px;}
   .section_2 .tab{width: 280px;}
+  .section_2 .contents .item_box .item .img_wrap{width: 110px;}
   .section_2 .contents .item_box .item .txt_wrap{bottom: 15px;}
   .section_2 .contents .item_box .item .txt_wrap strong{font-size: 14px;}
-  .section_2 .contents .item_box .item .txt_wrap span{margin: 10px 0; font-size: 10px;}
+  .section_2 .contents .item_box.middle .txt_wrap strong{font-size: 24px; line-height: 30px;}
+  .section_2 .contents .item_box .item .txt_wrap span{margin: 5px 0; font-size: 12px;}
   .section_2 .contents .item_box .item .txt_wrap p{font-size: 12px;}
+  .section_2 .contents .swiper-slide .item_box.middle .txt_wrap{padding: 20px;}
+  .section_2 .contents .item_box.middle .txt_wrap a{right: auto; bottom: 15px;}
 
   /* new section */
   .new .new_wrapper{padding: 0 20px;}
-  .new .new_boxes .new_box h3{font-size: 18px;}
+  .new h2{padding-bottom: 30px;}
   .new .new_boxes .new_box .new_desc strong{font-size: 14px;    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; line-height:16px; overflow:hidden; text-overflow:ellipsis; margin: 10px 0;}
   .new .new_boxes .new_box .new_desc p{font-size: 12px;    display:-webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-line-clamp: 3;  -webkit-box-orient: vertical;}
   .new .new_boxes .new_box .new_desc a{margin-top: 20px;}
@@ -171,6 +192,10 @@
   .section_6 .business_wrap .txt_wrap{padding: 10px;}
   .section_6 .business_wrap .txt_wrap strong{font-size: 18px;}
   .section_6 .business_wrap .txt_wrap p{font-size: 14px;}
+  .section_6 .business_wrap > .btn_wrap .btn{width: 40px;height: 40px; line-height: 45px;}
+
+
+
 
 
   .trend .trend_wrapper{padding: 0 10px;}
@@ -183,16 +208,22 @@
 
 
   .footer .footer_nav_wrap{padding: 0 20px;}
-  .footer .footer_nav .sns_nav{position: relative;top: 0;right: 50%;transform: translateX(+50%);left: auto;}
-  .footer .footer_ect{padding: 0 20px; margin: 30px auto;}
-  .footer .footer_info{width: 100%; margin-left: 0;}
-  .footer .footer_info span{display: block;margin-bottom: 5px;}
-  .footer .footer_info br{display: none;}
-  .footer .footer_nav .left_nav{line-height: 15px; float: none;}
-  .footer .footer_info{width:100%}
-  .footer .footer_cs{position: relative; width: 100%;}
+  .footer .footer_nav .sns_nav{position: relative;top: 0;right: 50%;transform: translateX(+50%);left: auto; padding-bottom: 10px;}
+  .footer .footer_nav .left_nav{line-height: 15px; float: none; text-align: center; padding: 10px 0;}
   .footer .footer_nav .left_nav li{display: block;width: 100%;}
   .footer .footer_nav .left_nav li::after{display: none; }
+
+
+  .footer .footer_ect{padding: 0 20px; margin: 30px auto; text-align: center;}
+  /* .footer .footer_info{width:100%} */
+  .footer .footer_info{width: 100%; margin-left: 0; padding-right: 0;}
+  .footer .footer_info span{display: block;margin-bottom: 5px;}
+  .footer .footer_info br{display: none;}
+
+  .footer .footer_cs{position: relative; width: 100%; margin-top: 40px;}
+  .footer .footer_cs strong{padding-top: 5px;}
+  .footer .footer_cs span{padding: 5px 0 10px; font-size: 12px;}
+  .footer .footer_cs .cs_list{ display: inline-block; font-size: 12px;}
   
 }
 

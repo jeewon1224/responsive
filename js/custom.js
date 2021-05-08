@@ -4,6 +4,9 @@ $(document).ready(function(){
   $('#lang').click(function(){
     $('.lang').toggleClass('active');
   });
+  $('#hidden_lang').click(function(){
+    $('.hidden_lang').toggleClass('active');
+  });
 
 
   //메뉴 버튼 클릭 시 히든 네비게이션 오픈

@@ -3,15 +3,11 @@
 @import "uicons-regular-rounded.css";
 
 
-body{font-family: 'Poppins', sans-serif;
-    /* font-family: 'Noto Sans KR', sans-serif; */
-}
-body.hidden{overflow: hidden;}
 /* 헤더 */
 .header{position: fixed; height: 90px;  width: 100%; z-index: 2; transition: background .3s;}
 
 .header .header_wrap{position: relative; height: 100%;}
-.header .header_wrap h1{width: 100px; height: 33px;  position: absolute; top: 50%; transform: translateY(-50%); left: 50px; background: url(../img/header_logo.png) no-repeat; background-size: 100%; z-index: 10;}
+.header .header_wrap h1{width: 100px; height: 25px;  position: absolute; top: 50%; transform: translateY(-50%); left: 50px; background: url(../img/logo.png) no-repeat; background-size: 100%; z-index: 10;}
 .header .header_wrap h1 a{display: block; height: 100%;}
 .header .header_wrap h1 a img{}
 
@@ -26,10 +22,17 @@ body.hidden{overflow: hidden;}
 .header .gnb .right_gnb li.cart a{width: 20px; display: block; height: 20px;background-color: #fff; text-align: center; vertical-align: top;
     margin: 4px 0 0 0; line-height: 20px; border-radius: 50%; font-size: 12px; font-family: 'Poppins', sans-serif; color: #111;}
 .header .gnb .right_gnb li .lang{position: absolute; top: 30px; left: 50%; transform: translateX(-50%); width: 100px; background-color: #fff; box-shadow: 6px 9px 12px rgb(0 0 0 / 10%); z-index: 2; color: #111; padding: 15px 0; opacity: 0; visibility: hidden; transition: .3s;}
- .header .gnb .right_gnb li .lang a{text-align: center; display: block; line-height: 30px; transition: .3s;}
- .header .gnb .right_gnb li .lang a:hover{background-color: rgba(202, 202, 202, 0.8);}
+.header .gnb .right_gnb li .lang a{text-align: center; display: block; line-height: 30px; transition: .3s;}
+.header .gnb .right_gnb li .lang a:hover{background-color: rgba(202, 202, 202, 0.8);}
 .header .gnb .right_gnb li .lang.active{opacity: 1;visibility: visible;}
-.header .gnb .right_gnb li a i{}
+
+.header .hidden_gnb .hidden_right{position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); color: #111; display: none; padding-bottom: 50px;}
+.header .hidden_gnb .hidden_right li{float: left; line-height: 20px;     margin: 0 11px;
+    font-size: 14px;
+}
+.header .gnb .hidden_gnb .hidden_right li .hidden_lang{opacity: 0; visibility: hidden; position: absolute; width: 60px; background-color: #eee; box-shadow: 6px 9px 12px rgb(0 0 0 / 10%); color: #111;left: 50%; transform: translateX(-50%);}
+.header .gnb .hidden_gnb .hidden_right .hidden_lang.active{opacity: 1;visibility: visible;}
+.header .gnb .hidden_gnb .hidden_right li .hidden_lang a{display: block;text-align: center;line-height: 20px;}
 
 
 
@@ -56,13 +59,7 @@ body.hidden{overflow: hidden;}
 .header .hidden_gnb .hidden_list > li > a{font-size: 50px; font-family: 'Noto Sans KR', sans-serif; font-weight: 600;}
 .header .hidden_gnb .hidden_list > li .depth2{visibility: hidden; opacity: 0; position: absolute; left: 600px; top: 250px; transition: .6s;}
 .header .hidden_gnb .hidden_list > li:hover .depth2{visibility: visible; opacity: 1; left: 500px;}
-
-
 .header .hidden_gnb .hidden_bg{width: 30%; background-color: #fff; height: 100%; position: absolute; right: 0;top: 0; background-position: center; background-size: cover; transition: .3s;}
-
-
-
-
 
 
 .header.fixed{background-color: #fff;}
@@ -90,15 +87,15 @@ body.hidden{overflow: hidden;}
 .footer .footer_nav .sns_nav li a i{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff;}
 
 .footer .footer_ect{width: 1400px; margin: 50px auto;}
-.footer .footer_ect .footer_logo{width: 170px; height: 32px; float: left;}
-.footer .footer_ect .footer_logo a{display: block; background: url(../img/footer_logo.png) no-repeat ; width: 100%; height: 100%;}
+.footer .footer_ect .footer_logo{float: left;}
+.footer .footer_ect .footer_logo a{display: inline-block; background: url(../img/footer_logo.png) no-repeat ; width: 100px; height: 25px; background-size: 100%;}
 
-.footer .footer_info{float: left; font-size: 12px; margin-left: 50px;}
+.footer .footer_info{float: left; font-size: 12px; margin-left: 70px;}
 .footer .footer_info span{display: inline-block; margin-right: 20px; margin-bottom: 15px;}
 .footer .footer_info span a{color: #0001ea;}
 .footer .footer_info p{color: #999; margin-top: 30px;}
 
-.footer .footer_cs{float: left; margin-left: 50px;}
+.footer .footer_cs{float: right; margin-left: 50px;}
 .footer .footer_cs em{font-weight: 500;}
 .footer .footer_cs strong{display: block; padding-top: 20px; font-size: 30px; font-weight: 500;}
 .footer .footer_cs span{display: block; font-size: 14px; color: #999; padding: 15px 0 30px;}

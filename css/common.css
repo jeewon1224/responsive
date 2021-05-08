@@ -6,3 +6,8 @@
 .clear:after{clear: both; display: block; content: '';}
 .blind{position: absolute; width: 1px; height: 1px; overflow: hidden; margin: -1px; clip: rect(0,0,0,0);}
 .swiper-container{height: 100%;}
+
+body{font-family: 'Poppins', sans-serif;
+ /* font-family: 'Noto Sans KR', sans-serif; */
+}
+body.hidden{overflow: hidden;}
