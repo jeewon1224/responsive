@@ -71,20 +71,22 @@
 
 /* footer */
 
-.footer{}
+.footer{background: #111; color: #fff;}
 .footer .footer_nav{border-top: 1px solid #999; border-bottom: 1px solid #999;}
 .footer .footer_nav_wrap{width: 1400px; margin: 0 auto; position: relative; height: 70px;}
 .footer .footer_nav .left_nav{float: left; line-height: 70px;}
-.footer .footer_nav .left_nav li{float: left; color: #999;}
-.footer .footer_nav .left_nav li::after{content: '|'; margin: 0 10px;}
+.footer .footer_nav .left_nav li{float: left;}
+.footer .footer_nav .left_nav li::after{content: '|'; margin: 0 5px;}
 .footer .footer_nav .left_nav li:last-child:after{content:'';}
 .footer .footer_nav .left_nav li a{transition: .3s;}
-.footer .footer_nav .left_nav li a:hover{font-weight: bold; color: #111;}
+.footer .footer_nav .left_nav li a:hover{font-weight: bold; color: #999;}
 
 .footer .footer_nav .sns_nav{float: right;  position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
 .footer .footer_nav .sns_nav li{float: left;}
-.footer .footer_nav .sns_nav li a{display: inline-block; width: 30px; height: 30px; border-radius: 50%; background-color: #ddd; margin-left: 10px; position: relative;}
-.footer .footer_nav .sns_nav li a i{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff;}
+.footer .footer_nav .sns_nav li a{display: inline-block; margin-left: 10px; position: relative; transition: .3s;}
+.footer .footer_nav .sns_nav li a:hover{color: #999;}
+.footer .footer_nav .sns_nav li a span{}
+/* .footer .footer_nav .sns_nav li a i{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff;} */
 
 .footer .footer_ect{width: 1400px; margin: 50px auto;}
 .footer .footer_ect .footer_logo{float: left;}

@@ -21,17 +21,16 @@ $(document).ready(function(){
     $('.header').addClass('on');
     $('body').addClass('hidden');
 
-    var tweenStagger = TweenMax.staggerFromTo('.hidden_gnb li', 1,
-    {
-      opacity :0,
-      y:50,
-    },
-    {
-     opacity:1,
-     y:0
-    },
-    0.2
-  );
+    var tweenStagger = TweenMax.staggerFromTo('.hidden_list li', 1,
+      {
+        opacity :0,
+        y:50,
+      },
+      {
+      opacity:1,
+      y:0
+      },
+    0.2);
   
     }
   });
@@ -187,6 +186,8 @@ var mySwiper = new Swiper('.sec5', {
 })
 
 
+
+
 var slide01 = new Swiper('.slide_01', {
   navigation: {
     nextEl: '.business_wrap .btn.next',
@@ -195,12 +196,14 @@ var slide01 = new Swiper('.slide_01', {
     simulateTouch : false,
     speed: 1500,
     parallax: true,
+    loop: 'true'
 })
 
 var slide02 = new Swiper('.slide_02', {
   simulateTouch : false,
   parallax: true,
   speed: 1500,
+  loop: 'true'
 
 })
 
@@ -208,6 +211,7 @@ var slide03 = new Swiper('.slide_03', {
   simulateTouch : false,
   parallax: true,
   speed: 1500,
+  loop: 'true'
 
 })
 

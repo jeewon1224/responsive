@@ -95,7 +95,7 @@
 .new .new_boxes .new_box .new_img{border-radius: 10px; overflow: hidden;}
 .new .new_boxes .new_box .new_img img{width: 100%; height: 100%; object-fit: cover; transition: .4s;}
 .new .new_boxes .new_box .new_img:hover img{transform: scale(1.1);}
-.new .new_boxes .new_box .new_desc{font-family: 'Poppins', sans-serif;}
+.new .new_boxes .new_box .new_desc{font-family:'Poppins','Noto Sans KR', sans-serif;}
 .new .new_boxes .new_box .new_desc strong{font-size: 18px; font-weight: 500;  margin: 20px 0; display: block; line-height: 22px;}
 .new .new_boxes .new_box .new_desc p{color: #858585; line-height: 20px;}
 .new .new_boxes .new_box .new_desc a{position: relative; display: inline-block; margin-top: 40px;}
@@ -129,7 +129,7 @@
 .section_5 .sec5 .swiper-slide .slide_box{position: relative;}
 .section_5 .sec5 .swiper-slide .slide_box .bg{height: 650px; width: calc(50% + 100px);}
 .section_5 .sec5 .swiper-slide .slide_box .bg img{width: 100%;height: 100%;object-fit: cover;}
-.section_5 .sec5 .swiper-slide .slide_box .detail{display: inline-block; position: absolute; top: 50%;right: 0; padding: 50px 20px 50px 100px; background-color: #fff; height: 450px; width: 50%; transform: translateY(-50%);}
+.section_5 .sec5 .swiper-slide .slide_box .detail{display: inline-block; position: absolute; top: 50%;right: 0; padding: 50px 20px 50px 100px; background-color: #fff; height: 450px; width: 50%; transform: translateY(-50%); font-family: 'Noto Sans KR', 'Poppins', Sans-Serif;}
 .section_5 .sec5 .swiper-slide .slide_box .detail .tit_wrap{}
 .section_5 .sec5 .swiper-slide .slide_box .detail .tit_wrap span{display: block; margin-bottom: 10px;}
 .section_5 .sec5 .swiper-slide .slide_box .detail .tit_wrap strong{font-size: 50px; font-weight: 600;}
@@ -173,7 +173,7 @@
 .section_6 .business_wrap img{width: 100%; height: 100%;object-fit: cover;}
 .section_6 .business_wrap .txt_wrap{position: absolute; bottom: 0;left: 0;padding: 30px; color: #fff;}
 .section_6 .business_wrap .txt_wrap strong{font-size: 38px; display: block; margin-bottom: 20px;font-weight: 500;}
-.section_6 .business_wrap .txt_wrap p{font-size: 18px; line-height: 20px;}
+.section_6 .business_wrap .txt_wrap p{font-size: 18px; line-height: 20px; font-family: 'Noto Sans KR', sans-serif;}
 .section_6 .business_wrap > .btn_wrap .btn{width: 60px;height: 60px;float: left; border:1px solid #111; border-radius: 50%; text-align: center; line-height: 62px; transition: .3s;}
 .section_6 .business_wrap > .btn_wrap .btn:hover{background-color: #111; color: #fff;}
 .section_6 .business_wrap > .btn_wrap .btn.prev{margin-right: 20px;}
@@ -182,7 +182,6 @@
 .trend{padding: 50px 0;}
 .trend .trend_wrapper{width: 1400px;margin: 0 auto;}
 .trend .trend_tit{text-align: center;}
-.trend .trend_tit span{font-family: 'Poppins', sans-serif;}
 .trend .trend_tit h2{font-size: 35px; font-weight: 600; margin-top: 20px;}
 .trend .trend_con{margin-top: 30px;}
 .trend .trend_con .con_wrap{}
@@ -194,9 +193,9 @@
 .trend .trend_con .con_wrap .grid .grid-item .img_wrap a img{width: 100%; height: 100%;object-fit: cover;}
 .trend .trend_con .con_wrap .grid .grid-item .img_wrap a span{position: absolute;width: 100px;height: 100px;border: 2px solid #fff; border-radius: 50%; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .trend .trend_con .con_wrap .grid .grid-item .img_wrap a span i{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; color: #fff;}
-.trend .trend_con .con_wrap .grid .grid-item .desc_wrap{padding:20px;}
+.trend .trend_con .con_wrap .grid .grid-item .desc_wrap{padding:20px;  font-family: 'Poppins','Noto Sans KR', sans-serif;}
 .trend .trend_con .con_wrap .grid .grid-item .desc_wrap span{display: block; color: #999; font-family: 'Poppins', sans-serif;}
-.trend .trend_con .con_wrap .grid .grid-item .desc_wrap strong{font-size: 20px; font-weight: 500; padding: 10px 0 20px 0; display: block;}
+.trend .trend_con .con_wrap .grid .grid-item .desc_wrap strong{font-size: 20px; font-weight: 500; padding: 10px 0 20px 0; display: block; line-height: 23px;}
 .trend .trend_con .con_wrap .grid .grid-item .desc_wrap  p{color: #999; line-height: 25px;}
 
 
