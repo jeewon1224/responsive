@@ -131,6 +131,9 @@
 @media screen and (max-width: 768px) {
 
   /* header */
+  .header{height: 60px;}
+  .header .gnb .right_gnb{display: none;}
+  .header .menu_btn{top: 55%;right: 25px;}
   .header .header_wrap h1{left: 15px;}
   .header .hidden_gnb .list_wrap{width: 100%;}
   .header .hidden_gnb .hidden_list > li > a{font-size: 28px;}
@@ -147,10 +150,10 @@
   .main_visual .main_search input{width: 200px; margin: 20px 0; height: 45px;}
   .main_visual .main_search em{font-size: 12px;}
   .main_visual .main_search span{font-size: 16px;}
-  .main_visual .mv_wrapper.bg1{background-image: url(../img/main/main01_small.jpg);}
-  .main_visual .mv_wrapper.bg2{background-image: url(../img/main/main04_small.jpg);}
-  .main_visual .mv_wrapper.bg3{background-image: url(../img/main/main10_small.jpg);}
-  .main_visual .mv_wrapper.bg4{background-image: url(../img/main/main08_small.jpg);}
+  .main_visual .mv_wrapper.bg1{background-image: url(../img/main/main1_small.jpg);}
+  .main_visual .mv_wrapper.bg2{background-image: url(../img/main/main2_small.jpg);}
+  .main_visual .mv_wrapper.bg3{background-image: url(../img/main/main3_small.jpg);}
+  .main_visual .mv_wrapper.bg4{background-image: url(../img/main/main4_small.jpg);}
 
 
 
@@ -201,21 +204,20 @@
   .section_6 .business_wrap .txt_wrap strong{font-size: 18px;}
   .section_6 .business_wrap .txt_wrap p{font-size: 14px;}
   .section_6 .business_wrap > .btn_wrap .btn{width: 40px;height: 40px; line-height: 45px;}
+  .section_6 .business_wrap >div{position: relative;}
   .section_6 .business_wrap >div.slide01{background: red;
     padding-bottom: 50%;
     height: auto;
-    width: 33.33%;
-    position: relative;}
-    .section_6 .business_wrap >div.slide02{width: 33.33%;
-      left: calc(33.33%);
+    width: 100%;
+    position: relative; top: auto; left: auto;}
+    .section_6 .business_wrap >div.slide02{width: 100%;
+      left: auto;
       padding-bottom: 50%;
       height: auto;
-      /* float: left; */
-      top: 0;}
-      .section_6 .business_wrap >div.slide03{    left: calc(66.66%);
+      top: auto; }
+      .section_6 .business_wrap >div.slide03{    left:auto;
         bottom: auto;
-        /* top: 30px; */
-        width: 33.33%;}
+        width:100%; top: auto;}
 
 
 
@@ -256,5 +258,6 @@
 
 @media screen and (max-width: 540px) {
 
-
+  .new .new_boxes .new_box{width: 100%;margin-bottom: 20px;}
+  .new .new_boxes .new_box:nth-child(2){margin: 0; margin-bottom: 20px;}
 }

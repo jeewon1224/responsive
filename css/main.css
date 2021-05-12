@@ -7,10 +7,10 @@
  /* 메인배너 */
 .main_visual{}
 .main_visual .mv_wrapper{background-repeat: no-repeat; background-size: cover; background-attachment: fixed; transition: .3s; background-position: center;}
-.main_visual .mv_wrapper.bg1{background-image: url(../img/main/main01.jpg);}
-.main_visual .mv_wrapper.bg2{background-image: url(../img/main/main04.jpg);}
-.main_visual .mv_wrapper.bg3{background-image: url(../img/main/main02.jpg);}
-.main_visual .mv_wrapper.bg4{background-image: url(../img/main/main08.jpg);}
+.main_visual .mv_wrapper.bg1{background-image: url(../img/main/main1.jpg);}
+.main_visual .mv_wrapper.bg2{background-image: url(../img/main/main2.jpg);}
+.main_visual .mv_wrapper.bg3{background-image: url(../img/main/main3.png);}
+.main_visual .mv_wrapper.bg4{background-image: url(../img/main/main4.jpg);}
 
 .main_visual .main_banner{height: 100vh;}
 .main_visual .main_banner .swiper-wrapper{}
@@ -79,9 +79,18 @@
 .section_2 .contents .swiper-slide .item_box.middle .txt_wrap{top: 0; left: 0; padding: 50px 0 0 50px; text-align: left; transform: translateX(0); font-family: 'Noto Sans KR', sans-serif;}
 .section_2 .contents .item_box.middle .txt_wrap strong{font-size: 30px; font-weight: 300; line-height: 40px; }
 .section_2 .contents .item_box.middle .txt_wrap span{margin: 30px 0 90px; line-height: 15px;}
-.section_2 .contents .item_box.middle .txt_wrap a{padding: 10px 25px; background: #111; color: #fff; border-radius: 20px;}
-
-
+/* .section_2 .contents .item_box.middle .txt_wrap a{padding: 10px 25px; background: #111; color: #fff; border-radius: 20px;} */
+.section_2 .contents .item_box.middle .txt_wrap a{padding: 10px 25px; border: 1px solid #ffffff;
+ position: relative;
+ z-index: 1;
+ -webkit-transition: all 0.4s;
+ -moz-transition: all 0.4s;
+ -ms-transition: all 0.4s;
+ -o-transition: all 0.4s;
+ transition: all 0.4s; _border-radius: 20px; background: transparent; color: #fff;}
+ .section_2 .contents .item_box.middle .txt_wrap a::after{content: ""; position: absolute; top: 0; left: 0; width: 0%; height: 100%; transition: all 0.4s; background: #111; }
+ .section_2 .contents .item_box.middle .txt_wrap a:hover{color: #fff; border: none;}
+ .section_2 .contents .item_box.middle .txt_wrap a:hover::after{width: 100%; z-index: -1;}
 
 
 /* new */

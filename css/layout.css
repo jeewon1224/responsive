@@ -27,10 +27,9 @@
 .header .gnb .right_gnb li .lang.active{opacity: 1;visibility: visible;}
 
 .header .hidden_gnb .hidden_right{position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); color: #111; display: none; padding-bottom: 50px;}
-.header .hidden_gnb .hidden_right li{float: left; line-height: 20px;     margin: 0 11px;
-    font-size: 14px;
-}
-.header .gnb .hidden_gnb .hidden_right li .hidden_lang{opacity: 0; visibility: hidden; position: absolute; width: 60px; background-color: #eee; box-shadow: 6px 9px 12px rgb(0 0 0 / 10%); color: #111;left: 50%; transform: translateX(-50%);}
+.header .hidden_gnb .hidden_right li{float: left; line-height: 20px; margin: 0 11px; font-size: 14px;}
+.header .hidden_gnb .hidden_right li:last-child{position: relative;}
+.header .gnb .hidden_gnb .hidden_right li .hidden_lang{opacity: 0; visibility: hidden; position: absolute; width: 50px; background-color: #eee; box-shadow: 6px 9px 12px rgb(0 0 0 / 10%); color: #111;left: -10px;}
 .header .gnb .hidden_gnb .hidden_right .hidden_lang.active{opacity: 1;visibility: visible;}
 .header .gnb .hidden_gnb .hidden_right li .hidden_lang a{display: block;text-align: center;line-height: 20px;}
 
