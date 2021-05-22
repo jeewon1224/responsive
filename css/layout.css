@@ -85,7 +85,6 @@
 .footer .footer_nav .sns_nav li a{display: inline-block; margin-left: 10px; position: relative; transition: .3s;}
 .footer .footer_nav .sns_nav li a:hover{color: #999;}
 .footer .footer_nav .sns_nav li a span{}
-/* .footer .footer_nav .sns_nav li a i{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff;} */
 
 .footer .footer_ect{width: 1400px; margin: 50px auto;}
 .footer .footer_ect .footer_logo{float: left;}
@@ -93,9 +92,7 @@
 
 .footer .footer_info{float: left; font-size: 12px; margin-left: 70px;}
 .footer .footer_info span{display: inline-block; margin-right: 20px; margin-bottom: 15px;}
-.footer .footer_info span a{color: #0001ea;}
 .footer .footer_info p{color: #999; margin-top: 30px;}
-
 .footer .footer_cs{float: right; margin-left: 50px;}
 .footer .footer_cs em{font-weight: 500;}
 .footer .footer_cs strong{display: block; padding-top: 20px; font-size: 30px; font-weight: 500;}

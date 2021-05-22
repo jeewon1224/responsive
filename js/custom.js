@@ -68,17 +68,9 @@ $(document).ready(function(){
     curr =$(this).scrollTop();
     if ( curr > offset.top ) {
       $('.header').addClass('fixed');
-      // $('.header').css('background-color','white');
-      // $('.header .gnb').css('color','black');
-      // $('.header .menu_btn button i').css('background-color','#111');
-      // $('#logo').attr("src", 'img/logo_hover.png');
 
     }else {
       $('.header').removeClass('fixed');
-      // $('.header').css('background-color','transparent');
-      // $('.header .gnb').css('color','white');
-      // $('.header .menu_btn button i').css('background-color','#fff');
-      // $('#logo').attr("src", 'img/logo.png');
     }
   });
 
@@ -89,7 +81,6 @@ $(document).ready(function(){
 // 메인 배너 슬라이드
 
  var mySwiper2 = new Swiper('.main_banner', {
-  // effect : 'fade',
   loop: 'true',
   pagination: {
     el: '.main-swiper-pagination',
@@ -123,17 +114,14 @@ var swiper1 = new Swiper('.tab', {
       simulateTouch:true,
 
       breakpoints: {
-        // when window width is >= 320px
         320: {
           slidesPerView: 2,
           spaceBetween: 20
         },
-        // when window width is >= 480px
         480: {
           slidesPerView: 3,
           spaceBetween: 30
         },
-        // when window width is >= 640px
         640: {
           slidesPerView: 4,
           spaceBetween: 40
@@ -161,23 +149,18 @@ var swiper2 = new Swiper ('.contents', {
 
 
 
-
-
-
-
-
-var mySwiper = new Swiper('.sec5', {
+var mySwiper = new Swiper('.release_slide', {
   effect : 'fade',
   autoHeight: true,
   slidesPerView: 1,
   // spaceBetween: 10,
   loop: 'true',
   navigation: {
-    nextEl: '.sec5 .btn.next',
-    prevEl: '.sec5 .btn.prev',
+    nextEl: '.release_slide .btn.next',
+    prevEl: '.release_slide .btn.prev',
   },
   pagination: {
-    el: '.sec5-swiper-pagination',
+    el: '.release-swiper-pagination',
     clickable: true,
     renderBullet: function (index, className) {
       return '<span class="' + className + '">' + ('0'+ (index + 1)) + '</span>';
@@ -204,7 +187,6 @@ var slide02 = new Swiper('.slide_02', {
   parallax: true,
   speed: 1500,
   loop: 'true'
-
 })
 
 var slide03 = new Swiper('.slide_03', {
@@ -212,8 +194,8 @@ var slide03 = new Swiper('.slide_03', {
   parallax: true,
   speed: 1500,
   loop: 'true'
-
 })
+
 
 
 
@@ -221,15 +203,10 @@ $('.business_wrap .next').click(function(){
   slide02.slideNext();
   slide03.slideNext();
 })
-
-
 $('.business_wrap .prev').click(function(){
   slide02.slidePrev();
   slide03.slidePrev();
 })
-
-
-
 
 
 
