@@ -121,6 +121,7 @@
   .main_visual .main_search input{width: 200px; margin: 20px 0; height: 45px;}
   .main_visual .main_search em{font-size: 12px;}
   .main_visual .main_search span{font-size: 16px;}
+  .main_visual .mv_wrapper{background-attachment:initial;}
   .main_visual .mv_wrapper.bg1{background-image: url(../img/main/main1_small.jpg);}
   .main_visual .mv_wrapper.bg2{background-image: url(../img/main/main2_small.jpg);}
   .main_visual .mv_wrapper.bg3{background-image: url(../img/main/main3_small.jpg);}
